@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { FaEye as OpenEye, FaEyeSlash as CloseEye } from "react-icons/fa";
+import {
+  FaEye as OpenEye,
+  FaEyeSlash as CloseEye,
+  FaInstagram,
+} from "react-icons/fa";
 
 export default function App() {
   const [optionValue, setOptionValue] = useState("");
@@ -14,23 +18,23 @@ export default function App() {
   return (
     <main className="bg-[url('/img-3.jpg')] bg-no-repeat bg-cover  ">
       <div className="max-w-2xl mx-auto pb-[3rem] backdrop-blur-sm bg-white bg-opacity-20 border border-gray-400 rounded-lg shadow-lg">
-        <div className="pt-[1rem] pb-[5rem] flex items-center justify-center">
-          <div className="w-[26rem] h-[3rem]">
+        <div className="pt-[1rem]  flex flex-col gap-[1rem] items-center justify-center">
+          <div className="w-[26rem]">
             <img src="/img-2.jpg" alt="satyabama logo" />
+          </div>
+          <div className="w-[10rem]">
+            <img src="/nacpp.png" alt="nac logo" />
           </div>
         </div>
         <div className="mt-[1rem] flex flex-col items-center justify-center">
           <div className="text-center">
-            <p className="text-2xl text-blue-400 font-medium">
-              A vision of IT Department
-            </p>
-            <p className="font-oleo font-thin text-xl">
-              &quot;Technology is a Double Edged Sword&quot;
+            <p className="text-3xl text-blue-500 font-extrabold uppercase">
+              vision of IT Department
             </p>
           </div>
           <div className="text-center mt-[1rem]">
             <span className="text-center border-b border-gray-700 font-bold text-xl pt-[1rem]">
-              Mentor Mentee Website
+              Mentor Mentee
             </span>
           </div>
           <form action="#" className="px-4">
@@ -108,12 +112,14 @@ export default function App() {
                 href="https://www.instagram.com/sathyabama_department_it?igsh=MWtzbHBvdGNodGJlbQ=="
                 target="_blank"
               >
-                <img
-                  src="/logo-4.png"
-                  className="w-[4rem] h-[4rem]"
-                  alt="instalogo"
-                />
+                <FaInstagram className="text-4xl" />
               </a>
+            </div>
+            <div className="flex flex-col max-w-[20rem]  items-center">
+              <p className="font-bold text-2xl">About us:</p>
+              <p className="text-2xl font-medium text-wrap w-[] text-center">
+                To Impact Knowledge and Train Students in Innovation.
+              </p>
             </div>
           </form>
         </div>
